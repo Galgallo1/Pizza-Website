@@ -1,5 +1,38 @@
+body{
+    padding: 20px;
+}
+
+.landingpage{
+    background-color: brown;
+}
 .nav li{
     display:inline-block;
     justify-content: center;
     margin-left: 30px;
 }
+
+.welcome {
+    background-size: cover;
+    background-image: url(../images/background.jpeg);
+    height: 800px;
+}
+
+.welcome p {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    padding-top: 400px;
+    color: brown;
+}
+
+.container #order {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+#aboutus h1 {
+    text-align: center;
+    
+}
+    
