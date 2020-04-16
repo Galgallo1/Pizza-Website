@@ -34,6 +34,11 @@ body{
 
 #aboutus h1 {
     text-align: center;
+    margin: 20px;
 
+}
+
+.explanation p {
+    padding-top: 30%;
 }
     
