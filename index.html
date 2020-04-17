@@ -132,7 +132,7 @@
           <p id="orders"> Place Your Order Today!!</p>
           <div class="row">
             <div class="col-md-6">
-              <form id="form">
+              <form id="fom">
                 <label>Type of Pizza</label></br>
                 <select>
                   <option value="Select">Select</option>
@@ -146,36 +146,36 @@
 
                 <label>Pizza size</label></br>
                 <select>
-                  <option value="Select">Select</option>
-                  <option value="Large@1000">Large@1000/=</option>
-                  <option value="Medium@800">Medium@800/=</option>
-                  <option value="Small@600">Small@600/=</option>
+                  <option value="0">Select</option>
+                  <option value="1000">Large@1000/=</option>
+                  <option value="800">Medium@800/=</option>
+                  <option value="600">Small@600/=</option>
                 </select></br>
 
                 <label>Choose the crust you prefer</label></br>
                 <select>
-                  <option value="Select">Select</option>
-                  <option value="Crispy">Crispy@120</option>
+                  <option value="0">Select</option>
+                  <option value="120">Crispy@120</option>
                   <option value="Stuffed">Stuffed@180</option>
                   <option value="Gluten-free">Gluten-free@150</option>
                 </select></br>
 
                 <label>Select your favourite pizza topping at sh 50 each</label></br>
                 <label>Bacon</label>
-                <input type="checkbox" value="Bacon">
+                <input type="checkbox" value="50">
 
                 <label>Peperroni</label>
-                <input type="checkbox" value="Peperroni">
+                <input type="checkbox" value="50">
 
                 <label>Mushroom</label>
-                <input type="checkbox" value="Mushroom"></br>
+                <input type="checkbox" value="50"></br>
 
                 <label>Choose the number of pizza you want</label></br>
                 <input type="number"></br>
 
                 <label>Choose Delivery option</label></br>
-                <input type="radio" name="delivery" id="self">Self Pick-up </br> 
-                <input type="radio" name="delivery" id="home"> Home Delivery at 500/=</br>
+                <input type="radio" name="delivery" id="self" value=0>Self Pick-up </br> 
+                <input type="radio" name="delivery" id="home" value=500> Home Delivery at 500/=</br>
                 <button type="submit">Place Order</button>
               </form>
 

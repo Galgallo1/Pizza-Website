@@ -16,7 +16,12 @@ Placeorder.prototype.summary=function(){
 
 $(document).ready(function(){
 
-    $(form#)
+    $("form#fom").click(function(click){
+        event.preventDefault();
+        
+        var 
+
+    })
 
 
 })
