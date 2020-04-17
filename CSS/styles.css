@@ -42,3 +42,14 @@ body{
     padding-top: 30%;
 }
     
+.menu h1 {
+    text-align: center;
+    color: brown;
+    font-weight: 800;
+}
+
+.menu h2 {
+    text-align: center;
+    color: brown;
+    font-weight: 800;
+}
