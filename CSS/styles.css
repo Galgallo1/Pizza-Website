@@ -1,5 +1,6 @@
 body{
     padding: 20px;
+    background-color: olivedrab
 }
 
 .landingpage{
@@ -25,16 +26,18 @@ body{
     color: brown;
 }
 
-.container #order {
+.container #orders {
     text-align: center;
     font-size: 70px;
     font-weight: bolder;
+    color: brown;
 }
 
 
 #aboutus h1 {
     text-align: center;
     margin: 20px;
+    color: brown;
 
 }
 
@@ -81,4 +84,8 @@ body{
     text-align: center;
     color: brown;
     font-weight: 800;
+}
+
+#placeorder{
+    background-color: olivedrab;
 }
