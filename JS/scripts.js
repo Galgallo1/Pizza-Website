@@ -1,6 +1,7 @@
 
 
-function Placeorder(size,crust,topping,number){
+function Placeorder(type,size,crust,topping,number){
+    this.pizzatype=type;
     this.pizzasize=size;
     this.pizzacrust=crust;
     this.pizzatopping=topping;
@@ -8,7 +9,7 @@ function Placeorder(size,crust,topping,number){
 };
 
 Placeorder.prototype.summary=function(){
-    return "size:" +this.pizzasize + " " +"crust:" + this.pizzacrust + " " + "topping:" + " " + this.pizzatopping + "numbe:r" + this.pizzanumber;
+    return "type:" +this.pizzatype + "  " +"size:" +this.pizzasize + "  " +"crust:" + this.pizzacrust + "  " + "topping:" + this.pizzatopping + "  " + "number:" + this.pizzanumber;
 }
 
 //User Interface
@@ -18,6 +19,7 @@ $(document).ready(function(){
     $("form#fom").on("submit",function(){
         event.preventDefault();
         
+        var piztype=$("#taip").val();
         var pizsize=$("#saiz").val();
         var pizcrust=$("#crust").val();
 
