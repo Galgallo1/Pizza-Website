@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     $("#button").on("click",function(){
         alert("You can choose your pizza be delivered at home at a cost 500/= or come pick it free!")
-        prompt("Do you want delivery to your home?");
+        prompt("Do you want delivery to your home?"); 
     });
 
 
