@@ -145,7 +145,7 @@
                 </select></br>
 
                 <label>Pizza size</label></br>
-                <select>
+                <select id="saiz">
                   <option value="0">Select</option>
                   <option value="1000">Large@1000/=</option>
                   <option value="800">Medium@800/=</option>
@@ -153,7 +153,7 @@
                 </select></br>
 
                 <label>Choose the crust you prefer</label></br>
-                <select>
+                <select id="crust">
                   <option value="0">Select</option>
                   <option value="120">Crispy@120</option>
                   <option value="Stuffed">Stuffed@180</option>
@@ -174,10 +174,10 @@
                 <input type="number"></br>
 
                 <label>Choose Delivery option</label></br>
-                <input type="radio" name="delivery" id="self" value=0>Self Pick-up </br> 
-                <input type="radio" name="delivery" id="home" value=500> Home Delivery at 500/=</br>
-                <button type="submit">Place Order</button>
+                
+                <button type="submit" id="button">Place Order</button>
               </form>
+
 
             </div>
 
@@ -188,13 +188,20 @@
                 <p>Incase of any comment or complaint, Please reach out to us as fast as possible.</p>
                 <p id="regards">Regards, Management.</p>
               </div>
+                <h3>Your Order:</h3></br>
+                <ul id="your-order">
+
+                </ul>
+              
+              
+              
 
             </div>
           </div>
         </div>
 
         <script src="JS/jquery-3.5.0.min.js" type="text/javascript"></script>
-        <script src="JS/styles.js" type="text/javascript"></script>
+        <script src="JS/scripts.js" type="text/javascript"></script>
   </body>
 
 </html>
