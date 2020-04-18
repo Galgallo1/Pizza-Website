@@ -8,7 +8,7 @@ function Placeorder(size,crust,topping,number){
 };
 
 Placeorder.prototype.summary=function(){
-    return "size" +this.size + "crust" + this.crust +"topping" + this.topping + "number" + this.number;
+    return "size:" +this.pizzasize + " " +"crust:" + this.pizzacrust + " " + "topping:" + " " + this.pizzatopping + "numbe:r" + this.pizzanumber;
 }
 
 //User Interface
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
         var newOrder = new Placeorder(pizsize,pizcrust);
 
-        $("ul#your-order").append("<li><span>" + newOrder.pizzasize + newOrder.pizzacrust +"</span></li>");
+        $("ul#your-order").append("<li><span>" + newOrder.summary() +"</span></li>");
 
 
     });
