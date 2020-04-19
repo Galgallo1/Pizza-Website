@@ -1,4 +1,4 @@
-
+//Business Logic
 
 function Placeorder(type,size,crust,number){
     this.pizzatype=type;
@@ -38,10 +38,11 @@ $(document).ready(function(){
 
     });
 
-    $("#button").on("click",function(){
+    $("#baton").on("click",function(){
         alert("You can choose your pizza be delivered at home at a cost 500/= or come pick it free!")
         confirm("Do you want delivery to your home?"); 
         prompt("Enter Your address")
+        alert("You pizza will be delivered in an hour to your address. Thank for shopping with us")
     });
 
 
