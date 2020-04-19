@@ -1,16 +1,16 @@
 
 
-function Placeorder(type,size,crust,topping,number){
+function Placeorder(type,size,crust){
     this.pizzatype=type;
     this.pizzasize=size;
     this.pizzacrust=crust;
-    this.pizzatopping=topping;
-    this.pizzanumber=number;
 };
 
 Placeorder.prototype.summary=function(){
-    return "type:" +this.pizzatype + "  " +"size:" +this.pizzasize + "  " +"crust:" + this.pizzacrust + "  " + "topping:" + this.pizzatopping + "  " + "number:" + this.pizzanumber;
+    return "Type:" +this.pizzatype + "  " +"Size:" +this.pizzasize + "  " +"Crust:" + this.pizzacrust + "  " ;
 }
+
+Placeorder.prototype
 
 //User Interface
 
@@ -19,13 +19,13 @@ $(document).ready(function(){
     $("form#fom").on("submit",function(){
         event.preventDefault();
         
-        var piztype=$("#taip").val();
-        var pizsize=$("#saiz").val();
-        var pizcrust=$("#crust").val();
+        var piztype=$("#taip option:selected").text();
+        var pizsize=$("#saiz option:selected").text();
+        var pizcrust=$("#crust option:selected").text();
 
-        var newOrder = new Placeorder(pizsize,pizcrust);
+        var newOrder = new Placeorder(piztype,pizsize,pizcrust);
 
-        $("ul#your-order").append("<li><span>" + newOrder.summary() +"</span></li>");
+        $("ul#your-order").append("<li><span>" + newOrder.summary() + "</span></li>");
 
 
     });
