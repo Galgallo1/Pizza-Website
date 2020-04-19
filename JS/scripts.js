@@ -1,13 +1,14 @@
 
 
-function Placeorder(type,size,crust){
+function Placeorder(type,size,crust,number){
     this.pizzatype=type;
     this.pizzasize=size;
     this.pizzacrust=crust;
+    this.pizzanumber=number;
 };
 
 Placeorder.prototype.summary=function(){
-    return "Type:" +this.pizzatype + "  " +"Size:" +this.pizzasize + "  " +"Crust:" + this.pizzacrust + "  " ;
+    return "Type:" +this.pizzatype + "  " +"Size:" +this.pizzasize + "  " +"Crust:" + this.pizzacrust + "  " + "Number:" + this.pizzanumber ;
 }
 
 Placeorder.prototype
@@ -22,10 +23,17 @@ $(document).ready(function(){
         var piztype=$("#taip option:selected").text();
         var pizsize=$("#saiz option:selected").text();
         var pizcrust=$("#crust option:selected").text();
+        var piznumber=$("#quantity").val();
 
-        var newOrder = new Placeorder(piztype,pizsize,pizcrust);
+        var newOrder = new Placeorder(piztype,pizsize,pizcrust,piznumber);
 
-        $("ul#your-order").append("<li><span>" + newOrder.summary() + "</span></li>");
+        var pizsizeprice=$("#saiz option:selected").val();
+        var pizcrustprice=$("#crust option:selected").val();
+        var quantity=$("#quantity").val();
+
+        var Grandtotal=(parseInt(pizsizeprice) + parseInt(pizcrustprice))*quantity;
+
+        $("ul#your-order").append("<li><span>" + newOrder.summary() + "</span></li>" + "<li><span>" + "Grand Total Price:" +Grandtotal + "</span></li>");
 
 
     });
